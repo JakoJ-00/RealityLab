@@ -67,7 +67,8 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
   position: absolute;
   left: 20px;
   top: 140px;
-  width: 300px;
+  width: fit-content;
+  max-width: 90vw; /* opcjonalnie */
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   border-radius: 12px;
@@ -78,7 +79,8 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
   position: absolute;
   right: 20px;
   top: 140px;
-  width: 300px;
+  width: fit-content;
+  max-width: 90vw; /* opcjonalnie */
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   border-radius: 12px;
