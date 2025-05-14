@@ -63,13 +63,13 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       color: #00ffe1;
     }
 
-    .content-container {
+        .content-container {
       display: flex;
-      justify-content: center;
+      justify-content: space-between; /* <-- zmiana */
       align-items: flex-start;
-      gap: 40px; /* odstęp między sekcjami */
-      padding: 40px 20px;
-      flex-wrap: wrap; /* by na małych ekranach układało się pionowo */
+      gap: 40px;
+      padding: 40px 60px; /* <-- trochę większy padding poziomy */
+      flex-wrap: wrap;
     }
     
     .left-panel,
@@ -78,7 +78,8 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       padding: 20px;
       border-radius: 12px;
       color: white;
-      width: 300px;
+      width: 35%; /* <-- lepsza szerokość dla dużych ekranów */
+      min-width: 250px;
     }
     
     .right-panel {
