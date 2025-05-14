@@ -3,113 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RealityLab</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    header nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 20px;
-    }
-    .tile {
-      display: inline-block;
-      width: 200px;
-      margin: 10px;
-      padding: 20px;
-      background-color: #f0f0f0;
-      text-align: center;
-      border-radius: 10px;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <title>RealityLab</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- 🔝 Nagłówek -->
-  <header>
-    <div>RealityLab</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#kalkulatory">Kalkulatory</a>
-      <a href="#filmy">Filmy</a>
-      <a href="#blog">Blog</a>
-      <a href="#o-projekcie">O projekcie</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <h1>RealityLab</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Strona główna</a></li>
+          <li><a href="#">O projekcie</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- 🎬 Sekcja 1 -->
-  <section id="filmy">
-    <h2>Najnowszy odcinek RealityLab</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/example" 
-            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    <p>Krótkie wprowadzenie do tematu odcinka. <a href="#kalkulator">Pobierz powiązany PDF</a></p>
-  </section>
-
-  <!-- 🧮 Sekcja 2 -->
-  <section id="kalkulatory">
-    <h2>Interaktywne kalkulatory</h2>
-    <div class="tile">🔋 Energia miecza świetlnego</div>
-    <div class="tile">🚀 Czas podróży FTL</div>
-    <div class="tile">🪖 Ciśnienie zbroi power armor</div>
-    <div class="tile">💥 Energia niszcząca planetę</div>
-    <p><a href="#kalkulatory">Zobacz wszystkie</a></p>
-  </section>
-
-  <!-- 📚 Sekcja 3 -->
-  <section id="blog">
-    <h2>Blog / artykuły</h2>
-    <p>Opis artykułów, dodatki do filmów, wyjaśnienia wzorów, PDF-y.</p>
-  </section>
-
-  <!-- 📬 Sekcja 4 (opcjonalnie) -->
-  <section id="newsletter">
-    <h2>Newsletter</h2>
-    <p>Zapisz się, by dostawać nowe analizy i narzędzia:</p>
-    <form>
-      <input type="email" placeholder="Twój email">
-      <button type="submit">Zapisz się</button>
-    </form>
-  </section>
-
-  <!-- 🔻 Stopka -->
-  <footer>
-    <p>
-      <a href="https://youtube.com">YouTube</a> |
-      <a href="https://discord.com">Discord</a> |
-      <a href="https://github.com">GitHub</a>
-    </p>
-    <p>Copyright RealityLab © 2025</p>
-  </footer>
-</body>
+    <section class="hero">
+      <h2>Witaj w RealityLab</h2>
+      <p>Analizy technologii z uniwersów sci-fi i fantasy. Sprawdźmy razem, co mogłoby zadziałać… a co niekoniecznie.</p>
+    </section>
+  </body>
 </html>
