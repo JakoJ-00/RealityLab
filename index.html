@@ -2,12 +2,73 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealityLab</title>
-    <link rel="stylesheet" href="style.css">
+  <title>RealityLab</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1a1a1a;
+      padding: 1rem;
+    }
+
+    .logo { font-size: 1.5rem; }
+
+    .burger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .line {
+      width: 25px;
+      height: 3px;
+      background: white;
+      transition: 0.3s;
+    }
+
+    .burger.active .line1 {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.active .line2 {
+      opacity: 0;
+    }
+
+    .burger.active .line3 {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #2a2a2a;
+      position: absolute;
+      top: 60px;
+      right: 1rem;
+      padding: 1rem;
+      border-radius: 6px;
+      min-width: 150px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 5px 0;
+    }
+
+    .nav-links a:hover {
+      color: #00ffe1;
+    }
+  </style>
 </head>
-  <body>
-  <header>
+<body>
+
+<header>
   <div class="logo">RealityLab</div>
   <div class="burger" id="burger">
     <div class="line line1"></div>
@@ -16,28 +77,24 @@
   </div>
   <nav class="nav-links" id="nav-links">
     <a href="index.html">Strona główna</a>
-    <a href="about.html">O nas</a>
+    <a href="onas.html">O nas</a>
   </nav>
 </header>
-    
-  <main>
-    <section id="home" class="content-section active">
-    </section>
 
-    <section id="about" class="content-section">
-      <h2>O nas</h2>
-      <p>RealityLab to przestrzeń, w której technologia fikcyjnych światów spotyka się z rzeczywistością. Rozkładamy na czynniki pierwsze blastery, miecze świetlne i statki kosmiczne.</p>
-    </section>
-  </main>
-
-  <script>
+<script>
   const burger = document.getElementById("burger");
   const nav = document.getElementById("nav-links");
 
   burger.addEventListener("click", () => {
     burger.classList.toggle("active");
-    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+    if (nav.style.display === "flex") {
+      nav.style.display = "none";
+    } else {
+      nav.style.display = "flex";
+    }
   });
 </script>
+
 </body>
 </html>
+
