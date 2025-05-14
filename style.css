@@ -63,42 +63,35 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       color: #00ffe1;
     }
 
-    .content-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 40px 60px;
-      flex-wrap: wrap;
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-    
     .left-panel {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      border-radius: 12px;
-      color: white;
-      width: 300px;
-      margin-right: auto; /* przylega do lewej */
-    }
-    
-    .right-panel {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      border-radius: 12px;
-      color: white;
-      width: 300px;
-      min-height: 400px;
-      margin-left: auto; /* przylega do prawej */
-    }
-    
-    .left-panel h2,
-    .right-panel h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      color: #df1748 !important;
-    }
+  position: absolute;
+  left: 20px;
+  top: 140px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+}
 
+.right-panel {
+  position: absolute;
+  right: 20px;
+  top: 140px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  min-height: 400px;
+}
+
+.left-panel h2,
+.right-panel h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #df1748 !important;
+}
 
     .about-box {
       background-color: rgba(0, 0, 0, 0.4);
