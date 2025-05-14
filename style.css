@@ -114,7 +114,7 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       text-align: center;
       font-size: 2rem;
       margin-bottom: 20px;
-      color: #df1748;
+      color: #df1748 !important;
     }
 
     #particles-js {
