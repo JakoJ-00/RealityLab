@@ -79,5 +79,40 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       left: 0;
     }
 
-
+    @media (max-width: 768px) {
+      body {
+        font-size: 18px;
+      }
+    
+      header h1 {
+        font-size: 26px;
+      }
+    
+      .burger {
+        width: 30px;
+        height: 24px;
+      }
+    
+      .burger div {
+        height: 4px;
+      }
+    
+      nav ul {
+        font-size: 18px;
+      }
+    
+      nav ul li {
+        padding: 12px;
+      }
+    
+      main {
+        padding: 20px;
+      }
+    
+      /* Sekcja "o nas" (jeśli ma osobną klasę) */
+      section {
+        max-width: 95%;
+        font-size: 17px;
+      }
+    }
 
