@@ -10,7 +10,7 @@ body {
   color: #ffffff;
 }
 
-/* Header */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -19,20 +19,54 @@ header {
   color: white;
   padding: 1rem;
   position: relative;
+  z-index: 10;
 }
 
+/* LOGO */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
-}
-
-.burger {
-  font-size: 2rem;
   cursor: pointer;
-  display: block;
 }
 
+/* BURGER ICON */
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger:hover {
+  opacity: 0.7;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ANIMACJA zmiany w X */
+.burger.active .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active .line2 {
+  opacity: 0;
+}
+
+.burger.active .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* NAV MENU */
 .nav-links {
   position: absolute;
   top: 100%;
@@ -43,58 +77,29 @@ header {
   display: none;
   flex-direction: column;
   gap: 0.5rem;
+  min-width: 150px;
   animation: fadeIn 0.3s ease forwards;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
 .nav-links a:hover {
+  background-color: #00ffe14f;
   color: #00ffe1;
 }
 
-/* Animacja fade-in */
+/* FADE IN */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-
-/* Menu */
-nav {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  width: 200px;
-  background-color: #1a1a1a;
-  display: none;
-  border: 1px solid #333;
-  border-radius: 5px;
-  z-index: 1000;
-}
-
-nav.active {
-  display: block;
-}
-
-nav ul {
-  list-style: none;
-  text-align: left;
-  padding: 10px;
-}
-
-nav li {
-  margin: 10px 0;
-}
-
-nav a {
-  color: #00ffff;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 /* Sekcje */
 .content-section {
