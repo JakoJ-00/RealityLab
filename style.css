@@ -63,6 +63,36 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       color: #00ffe1;
     }
 
+    .content-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px; /* odstęp między sekcjami */
+      padding: 40px 20px;
+      flex-wrap: wrap; /* by na małych ekranach układało się pionowo */
+    }
+    
+    .left-panel,
+    .right-panel {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 12px;
+      color: white;
+      width: 300px;
+    }
+    
+    .right-panel {
+      min-height: 400px; /* dłuższa pionowo */
+    }
+    
+    .left-panel h2,
+    .right-panel h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #00ffe1;
+    }
+
+
     .about-box {
       background-color: rgba(0, 0, 0, 0.4);
       padding: 40px 20px;
