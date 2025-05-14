@@ -58,12 +58,16 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       color: #00ffe1;
     }
 
-    .about-container {
-      max-width: 800px;
-      margin: 100px auto 0 auto;
+    .about-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Wyśrodkowanie w pionie */
+      min-height: calc(100vh - 60px); /* odejmujemy wysokość headera */
       padding: 20px;
       text-align: center;
     }
+
 
     .about-container h1 {
       font-size: 2rem;
