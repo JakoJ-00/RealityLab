@@ -65,7 +65,7 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       max-width: 800px;
       width: 90%;
       text-align: center;
-      margin: 80px auto 40px auto; /* odstęp od góry i wyśrodkowanie */
+      margin: 60px auto 40px auto; /* odstęp od góry i wyśrodkowanie */
     }
 
     #particles-js {
