@@ -84,6 +84,15 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
        margin-bottom: 20px;
     }
 
+    .about-box {
+      background-color: rgba(0, 0, 0, 0.4); /* przezroczyste tło */
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 90%;
+      text-align: center;
+    }
+
     #particles-js {
       position: fixed;
       width: 100%;
