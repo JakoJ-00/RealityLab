@@ -110,6 +110,13 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       margin: 60px auto 40px auto; /* odstęp od góry i wyśrodkowanie */
     }
 
+    .about-box h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #df1748;
+    }
+
     #particles-js {
       position: fixed;
       width: 100%;
