@@ -155,16 +155,19 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
         max-width: 95%;
         font-size: 17px;
       }
+        
       .content-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+        flex-direction: column;  /* sekcje jedna pod drugą */
+        align-items: center;     /* wyśrodkuj je poziomo */
       }
     
       .left-panel,
       .right-panel {
-        width: 90%;
+        width: 90%;              /* zajmują większą część szerokości */
+        max-width: none;         /* usuwamy max-width na mobile */
       }
+}
+
 
     }
 
