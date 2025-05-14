@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
   <body>
-    <header>
-      <h1>RealityLab</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Strona główna</a></li>
-          <li><a href="#">O projekcie</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <div class="logo">RealityLab</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="#o-nas">O nas</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-      <h2>Witaj w RealityLab</h2>
-      <p>Analizy technologii z uniwersów sci-fi i fantasy. Sprawdźmy razem, co mogłoby zadziałać… a co niekoniecznie.</p>
-    </section>
+  <section id="o-nas" class="about">
+    <h2>O nas</h2>
+    <p>Analizy technologii z uniwersów sci-fi i fantasy. Sprawdźmy razem, co mogłoby zadziałać… a co niekoniecznie.</p>
+  </section>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("nav-menu");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
