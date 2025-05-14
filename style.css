@@ -66,6 +66,7 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       min-height: calc(100vh - 60px);
       padding: 40px 20px;
       text-align: center;
+      background-color: rgba(0, 0, 0, 0.4); /* czarne półprzezroczyste tło */
     }
     
     .about-center p {
