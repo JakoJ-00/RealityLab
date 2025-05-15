@@ -138,8 +138,10 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       padding: 20px;
       border-radius: 12px;
     
-      width: 300px;               /* dopasuj do paneli */
+      width: fit-content;
+      max-width: 90vw;
       margin: 80px auto 40px auto;
+    
       box-sizing: border-box;
       overflow-wrap: break-word;
     }
@@ -149,22 +151,23 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       color: #df1748;
       margin: 0;
       text-align: center;
-      word-break: break-word;
+      white-space: nowrap;
     }
-
-    .dots {
+    
+    .dots::after {
+      content: "";
       display: inline-block;
-      width: 1em;
-      text-align: left;
-      animation: dots 1.5s steps(3, end) infinite;
+      width: 1ch;
+      animation: dots 1.2s steps(4, end) infinite;
       overflow: hidden;
     }
     
     @keyframes dots {
-      0%   { width: 0 }
-      33%  { width: 0.33em }
-      66%  { width: 0.66em }
-      100% { width: 1em }
+      0%   { content: ""; }
+      25%  { content: "."; }
+      50%  { content: ".."; }
+      75%  { content: "..."; }
+      100% { content: ""; }
     }
 
     @media (max-width: 768px) {
