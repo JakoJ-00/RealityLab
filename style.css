@@ -64,36 +64,37 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
     }
 
     .left-panel {
-  position: absolute;
-  left: 20px;
-  top: 140px;
-  width: fit-content;
-  max-width: 90vw; /* opcjonalnie */
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  border-radius: 12px;
-  color: white;
-}
-
-.right-panel {
-  position: absolute;
-  right: 20px;
-  top: 140px;
-  width: fit-content;
-  max-width: 90vw; /* opcjonalnie */
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  border-radius: 12px;
-  color: white;
-  min-height: 400px;
-}
-
-.left-panel h2,
-.right-panel h2 {
-  margin-top: 0;
-  font-size: 1.4rem;
-  color: #df1748 !important;
-}
+      position: fixed;
+      top: 140px;
+      left: 0;
+      width: 300px;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.4);
+      border-radius: 12px;
+      color: white;
+      height: auto;
+      overflow: auto;
+    }
+    
+    .right-panel {
+      position: fixed;
+      top: 140px;
+      right: 0;
+      width: 300px;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.4);
+      border-radius: 12px;
+      color: white;
+      height: 400px;
+      overflow: auto;
+    }
+    
+    .left-panel h2,
+    .right-panel h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #df1748 !important;
+    }
 
     .about-box {
       background-color: rgba(0, 0, 0, 0.4);
@@ -163,8 +164,10 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
     
       .left-panel,
       .right-panel {
-        width: 90%;              /* zajmują większą część szerokości */
-        max-width: none;         /* usuwamy max-width na mobile */
+        position: static;    /* usuń fixed */
+        width: 90%;          /* zajmują większość szerokości */
+        margin: 10px auto;   /* wyśrodkuj */
+        height: auto;        /* dostosuj wysokość */
       }
 }
 
