@@ -129,13 +129,14 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
     }
 
     .under-construction {
-      text-align: center;
+      width: 300px; /* taka sama jak panele */
       margin: 80px auto 40px auto;
-      padding: 20px 30px;
+      padding: 20px;
       background-color: rgba(0, 0, 0, 0.4);
       border-radius: 12px;
-      width: fit-content;
+      text-align: center;
     }
+
     
     .under-construction h2 {
       color: #df1748;
@@ -203,6 +204,10 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
         align-items: center;
         gap: 20px;
         padding: 20px;
+      }
+
+      .under-construction {
+        width: 90%;
       }
     
       .mobile-only .left-panel,
