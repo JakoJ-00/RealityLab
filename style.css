@@ -129,15 +129,17 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
     }
 
     .under-construction {
-      width: 300px; /* taka sama jak panele */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px; /* Tak jak panele */
       margin: 80px auto 40px auto;
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.4);
       border-radius: 12px;
-      text-align: center;
+      box-sizing: border-box;
     }
 
-    
     .under-construction h2 {
       color: #df1748;
       font-size: 1.5rem;
