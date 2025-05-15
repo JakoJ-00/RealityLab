@@ -139,7 +139,7 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
     }
     
     .under-construction img {
-      width: 120px;
+      width: fit-content;
       height: auto;
       margin-bottom: 10px;
     }
