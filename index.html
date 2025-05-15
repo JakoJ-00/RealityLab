@@ -22,15 +22,30 @@
     <a href="about.html">O nas</a>
   </nav>
 </header>
-<div class="left-panel">
-  <h2>Nowe filmy</h2>
-  <p>Wkrótce aktualizacje...</p>
+<!-- Wersja na komputer -->
+<div class="desktop-only">
+  <div class="left-panel">
+    <h2>Nowe filmy</h2>
+    <p>Treść panelu lewej strony</p>
+  </div>
+  <div class="right-panel">
+    <h2>Wiadomości naukowe</h2>
+    <p>Treść panelu prawej strony</p>
+  </div>
 </div>
 
-<div class="right-panel">
-  <h2>Świat nauki</h2>
-  <p>Ekskluzywne informacje już niedługo!</p>
+<!-- Wersja na telefon -->
+<div class="mobile-only content-container">
+  <div class="left-panel">
+    <h2>Nowe filmy</h2>
+    <p>Treść panelu lewej strony</p>
+  </div>
+  <div class="right-panel">
+    <h2>Wiadomości naukowe</h2>
+    <p>Treść panelu prawej strony</p>
+  </div>
 </div>
+
 
 <script>
   const burger = document.getElementById("burger");
