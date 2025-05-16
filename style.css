@@ -132,8 +132,8 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
         text-align: center;
         margin: 0;
         top: 140px;
-        left: 500px;
-        right: 500px;
+        left: 750px;
+        right: 750px;
         position: fixed;
         padding: 20px 30px;
         background-color: rgba(0, 0, 0, 0.4);
