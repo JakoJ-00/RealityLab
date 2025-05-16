@@ -131,7 +131,10 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
     .under-construction {
         text-align: center;
         margin: 0;
-        position: center;
+        top: 140px;
+        left: 500px;
+        right: 500px;
+        position: fixed;
         padding: 20px 30px;
         background-color: rgba(0, 0, 0, 0.4);
         border-radius: 12px;
@@ -152,12 +155,6 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       overflow: hidden;
     }
 
-    .center-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
     
     @keyframes dots {
       0%   { width: 0 }
