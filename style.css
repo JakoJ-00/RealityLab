@@ -151,6 +151,13 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
       animation: dots 1.5s steps(3, end) infinite;
       overflow: hidden;
     }
+
+    .center-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
     
     @keyframes dots {
       0%   { width: 0 }
