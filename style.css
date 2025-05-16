@@ -129,14 +129,12 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
     }
 
     .under-construction {
-      text-align: center;
-      position: fixed;
-      top: 140px;
-      position: center;
-      padding: 20px 30px;
-      background-color: rgba(0, 0, 0, 0.4);
-      border-radius: 12px;
-      width: fit-content;
+    text-align: center;
+    margin: fit-content;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    width: fit-content;
     }
     
     .under-construction h2 {
