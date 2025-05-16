@@ -157,9 +157,10 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
     .dots::after {
       content: "";
       display: inline-block;
-      width: 1ch;
+      width: 0ch;
       animation: dots 1.2s steps(4, end) infinite;
       overflow: hidden;
+      vertical-align: bottom;
     }
     
     @keyframes dots {
