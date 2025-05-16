@@ -130,7 +130,7 @@ body { margin: 0; background: #121212; color: white; font-family: sans-serif; }
 
     .under-construction {
     text-align: center;
-    margin: fit-content;
+    margin: 0;
     padding: 20px 30px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 12px;
